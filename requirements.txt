@@ -1,0 +1,12 @@
+aiohttp
+pyrogram>=2.0
+TgCrypto
+python-dotenv
+feedparser
+pillow
+requests
+bs4
+motor
+dnspython
+opencv-python-headless
+aiofiles

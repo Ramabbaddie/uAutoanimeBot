@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: autoanimebot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m AutoAnimeBot
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGO_DB_URI
+        sync: false
+      - key: STATUS_MSG_ID
+        sync: false
+      - key: SCHEDULE_MSG_ID
+        sync: false
+      - key: CHANNEL_TITLE
+        sync: false
+      - key: INDEX_CHANNEL_USERNAME
+        sync: false
+      - key: UPLOADS_CHANNEL_USERNAME
+        sync: false
+      - key: CONSUMET_API
+        sync: false
+      - key: COMMENTS_GROUP_LINK
+        sync: false
+      - key: SLEEP_TIME
+        value: 60
